@@ -6,7 +6,7 @@ before_install:
 - sudo chmod +x /usr/local/bin/ecs-cli
 notifications:
   email:
-  - carnell28@gmail.com
+  - xy_tian@126.com
   on_success: always
   on_failure: always
 env:

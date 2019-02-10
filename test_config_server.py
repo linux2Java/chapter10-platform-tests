@@ -23,7 +23,7 @@ class TestConfigServer(unittest.TestCase):
          (resp, content) = self.call_config_service("licensingservice","aws-dev")
          results = json.loads(content.decode("utf-8"))
          self.assertEqual(resp.status, 200)
-         self.assertEquals("https://github.com/carnellj/config-repo/licensingservice/licensingservice-aws-dev.yml",
+         self.assertEquals("https://github.com/linux2Java/config-repo/licensingservice/licensingservice-aws-dev.yml",
                            results["propertySources"][0]["name"])
 
     def test_licensingservice_default(self):
@@ -31,7 +31,7 @@ class TestConfigServer(unittest.TestCase):
          (resp, content) = self.call_config_service("licensingservice","default")
          results = json.loads(content.decode("utf-8"))
          self.assertEqual(resp.status, 200)
-         self.assertEquals("https://github.com/carnellj/config-repo/licensingservice/licensingservice.yml",
+         self.assertEquals("https://github.com/linux2Java/config-repo/licensingservice/licensingservice.yml",
                            results["propertySources"][0]["name"])
 
     def test_organizationservice_default(self):
@@ -39,7 +39,7 @@ class TestConfigServer(unittest.TestCase):
          (resp, content) = self.call_config_service("organizationservice","default")
          results = json.loads(content.decode("utf-8"))
          self.assertEqual(resp.status, 200)
-         self.assertEquals("https://github.com/carnellj/config-repo/organizationservice/organizationservice.yml",
+         self.assertEquals("https://github.com/linux2Java/config-repo/organizationservice/organizationservice.yml",
                            results["propertySources"][0]["name"])
 
     def test_organizationservice_aws_dev(self):
@@ -47,7 +47,7 @@ class TestConfigServer(unittest.TestCase):
          (resp, content) = self.call_config_service("organizationservice","aws-dev")
          results = json.loads(content.decode("utf-8"))
          self.assertEqual(resp.status, 200)
-         self.assertEquals("https://github.com/carnellj/config-repo/organizationservice/organizationservice-aws-dev.yml",
+         self.assertEquals("https://github.com/linux2Java/config-repo/organizationservice/organizationservice-aws-dev.yml",
                            results["propertySources"][0]["name"])
 
 
